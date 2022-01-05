@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+body{
+  font-family: montserrat;
+}
+.loader{
+  width: 100%;
+  height: 100vh;
+  background-color: #24262b;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+.intro{
+  width: 200px;
+  height: 200px;
+}
+.load{
+  width: 50px;
+  height: 50px;
+  border: 5px solid;
+  color: white;
+  border-radius: 50%;
+  border-top-color: transparent;
+  animation: loader 1.2s linear infinite;
+}
+@keyframes loader{
+  to{
+    transform: rotate(360deg);
+  }
+}
+#scroll{
+   font-size: 40px;
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+   z-index: 1;
+   border: none;
+   border-radius: 30px;
+   cursor: pointer;
+   display: none;
+}
+
+#body{
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#logo{
+  height: 155px;
+  width: 150px;
+  float: left;
+}
+#name{
+  height: 120px;
+  width: 180px;
+  display: inline-block;
+  margin: 20px 0px;
+  float: left;
+}
+nav{
+ 	background-color: #24262b;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 150px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+nav ul{
+  float: right;
+  padding-right: 25px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 220px;
+  margin: 0 2px;
+}
+nav ul li a{
+  color: rgba(255,255,255) ;
+  font-size: 20px;
+  padding: 7px 13px;
+  border-radius: 9px;
+}
+a{
+  text-decoration: none;
+}
+a.active,a:hover{
+  background:rgba(255,255,255) ;
+  transition: 0.5s;
+  color: #24262b;
+  text-decoration: none;
+}
+.checkbtn{
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 50px;
+  margin-right: 25px;
+  margin-top: 3px;
+  cursor: pointer;
+  display: none;
+  text-decoration: none;
+}
+#check{
+  display: none;
+}
+@media(max-width:952px){
+  nav ul li a{
+    font-size: 16px;
+    top: 0;
+  }  
+  nav{
+    height: 100px;
+  }
+}
+@media(max-width:858px){
+  .checkbtn{
+    display: block;
+    margin-top: 60px;
+    text-decoration: none;
+  }
+  ul{
+    position: fixed;
+    width: 97%;
+    margin-right: auto;
+    margin-left: 7.5px;
+    background-color: rgba(	14.1, 14.9, 16.9,0.8);
+    height: 296px;
+    top: 120px;
+    left: -100%;
+    position: absolute;
+    text-align: center;
+    transition: all .5s;
+    border-radius: .8rem;
+    z-index: 10;
+  }
+  nav{
+    height: 110px;
+  }
+  nav ul li{
+    display: block;
+    margin: 25px 0;
+    margin-left: 50px;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a.active,a:hover{
+    background-color: #ffffff;
+    color: rgba(	14.1, 14.9, 16.9);
+    border-radius: 6px;
+  }
+  #check:checked~ul{
+    left: 0%;
+  }
+#logo{
+  height: 120px;
+  width: 110px;
+  margin: 0px 0px;
+}
+#name{
+  height: 110px;
+  width: 170px;
+  margin: 5px 0px;
+}
+#bar{
+  color: white;
+}
+}
+

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="./css/header.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/aboutus.css" type="text/css" media="all" />
+    <title></title>
+  </head>
+  <body>
+    
+    <div class="loader">
+      <div class="load">
+      </div>
+    </div>
+    <button class="fas fa-chevron-circle-up " id="scroll"></button>
+    
+    <img id="logo" src="./images/logo.png" alt="logo" />
+      <img id="name" src="./images/name1.png" alt="name" />
+      
+<!--navigation bar-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i id="bar" class="fas fa-align-justify"></i>
+      </label>
+      <ul>
+        <li><a href="./home.html"><i class="fa fa-home"> Home</i></a></li>
+        <li><a class="active" href="./aboutus.html"><i class="fas fa-id-badge"> About</i></a></li>
+        <li><a href="./menu.html"><i class="fas fa-mug-hot"> Menu</i></a></li>
+        <li><a href="./gallery.html"><i class="fas fa-camera-retro"> Gallery</i></a></li>
+        <li><a href="./contact.html"><i class="fas fa-address-book"> Contact</i></a></li>
+      </ul>
+    </nav>
+    
+    <div id="body">
+    .<div class="content">
+      <div class="content_img">
+        <img class="banner" src="./images/cafe.jpeg" alt="coffee table" />
+      </div>
+      <div class="content_info">
+        <h2 class="title">About He, She & Tea </h2>
+        <p class="text">He, She & Tea offers a unique coffee house environment unlike any other in Macon. We are not only a place to drop in and get your morning cup of coffee (although you are more than welcome to do that)</p>
+      </div>
+    </div>
+    </div>
+      </div><br /><br />
+      
+  <div class="map">
+    <h2 class="h2">Get Directed</h2>
+    <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1OyM2rs-XVwpPUVFalcClfLfqWsNcvnZT" width="90%" height="450px" class="m"></iframe>
+  </div>    
+      
+  <div class="body">
+    <div class="content" id="open">
+      <div class="content_info" id="opening">
+        <h2 class="title">Opening Hours</h2>
+        <div class="text"><p>Mon:	9:00 am – 12:00 am</p>
+<p>Tue:	9:00 am – 12:00 am</p>
+<p>Wed:	9:00 am – 12:00 am</p>
+<p>Thu:	9:00 am – 12:00 am</p>
+<p>Fri:	9:00 am – 12:00 am</p>
+<p>Sat:	9:00 am – 12:00 am</p>
+<p>Sun:	9:00 am – 12:00 am</p></div>
+      </div>
+    </div>
+  </div>
+      
+  <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+          <div class="info">
+            <a href="./aboutus.html">About us</a></li>
+            <a href="./menu.html">Menu</a>
+  	 				<a href="https://www.google.com/maps/d/u/0/edit?mid=1OyM2rs-XVwpPUVFalcClfLfqWsNcvnZT&usp=sharing">Address</a>
+          </div>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>    
+  
+  </body>
+  
+   <script src="./jquery-3.5.1.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(window).on("load",function(){
+      $(".loader").fadeOut(1000);
+    });
+      $(window).scroll(function(){
+        if($(this).scrollTop()>30)
+        {
+          $('#scroll').fadeIn();
+        }
+        else
+        {
+          $('#scroll').fadeOut();
+        }
+      });
+      
+      $("#scroll").click(function(){
+        $('html,body').animate({scrollTop:0},800);
+      });
+    });
+  </script>
+</html>

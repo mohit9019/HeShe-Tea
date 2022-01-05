@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="./css/header.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/home.css" type="text/css" media="all" />
+    <title>Home</title>
+  </head>
+  <body>
+    
+    <div class="loader">
+      <img class="intro" src="./images/logo.png" alt="" />
+      </div>
+    </div>
+    
+    <img id="logo" src="./images/logo.png" alt="logo" />
+      <img id="name" src="./images/name1.png" alt="name" />
+      
+<!--navigation bar-->
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i id="bar" class="fas fa-align-justify"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="./home.html"><i class="fa fa-home"> Home</i></a></li>
+        <li><a href="./aboutus.html"><i class="fas fa-id-badge"> About</i></a></li>
+        <li><a href="./menu.html"><i class="fas fa-mug-hot"> Menu</i></a></li>
+        <li><a href="./gallery.html"><i class="fas fa-camera-retro"> Gallery</i></a></li>
+        <li><a href="#"><i class="fas fa-address-book"> Contact</i></a></li>
+      </ul>
+    </nav>
+    
+<!--content-->
+    <div id="body">
+    .<div class="content">
+      <div class="content_img">
+        <img class="banner" src="./images/m2.jpg" alt="coffee table" />
+      </div>
+      <div class="content_info">
+        <h2 class="title">THE FLAVORFUL VISION</h2>
+        <p class="text">We are one of its kinds Comfort Food Restaurant with strategically growing strong Franchise System where people with shared values and passion serve the best food. Be it Restaurants, Outdoor Brunch or Meal Packs we want deliver the best.</p>
+      </div>
+    </div>
+    </div>
+    <div class="more"><a href="./aboutus.html"><input type="button"  class="btn" value="About.." /></a>
+      </div><br /><br />
+      
+    <button class="fas fa-chevron-circle-up " id="scroll"></button>
+    
+<!--slider-->
+      <div class="slider">
+        <figure>
+          <img class="imgcon" src="./images/cofe5.jpeg" alt="photo" />
+          <img class="imgcon" src="./images/sand3.jpeg" alt="photo" />
+          <img class="imgcon" src="./images/gb2.jpeg" alt="photo" />
+          <img class="imgcon" src="./images/gb1.jpeg" alt="photo" />
+          <img class="imgcon" src="./images/2.jpg" alt="photo" />
+        </figure>
+      </div><div class="more"><a href="./gallery.html"><input type="button"  class="btn" value="Tea more.." /></a>
+      </div>
+      <br /><br /><br />
+    
+<!--testimonials-->
+<div class="testimonial">
+    <h2 class="testi">Testimonials</h2>
+    <div class="box">
+      <div class="card">
+        <div class="card-text">
+          <i class="fa fa-quote-right"></i>
+          <p>"The coffee here is as good as the best coffee I have had in Melbourne, and the smoothie bowls are really yummy too❤❤❤</p>
+        </div>
+      </div>
+     </div>
+    <div class="box">
+      <div class="card">
+        <div class="card-text">
+          <i class="fa fa-quote-right"></i>
+          <p>"Whether you want a latte or an iced coffee this place is the best! Free wifi and also some food if you're a bit peckish."</p>
+        </div>
+      </div>
+     </div>
+    <div class="box">
+      <div class="card">
+        <div class="card-text">
+          <i class="fa fa-quote-right"></i>
+          <p>"Friendly service, awesome coffee and really good price we have ordered double espresso and chocolate milkshake and it was only $5"</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    
+<!--footer-->    
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+          <div class="info">
+            <a href="./aboutus.html">About us</a></li>
+            <a href="./menu.html">Menu</a>
+  	 				<a href="https://www.google.com/maps/d/u/0/edit?mid=1OyM2rs-XVwpPUVFalcClfLfqWsNcvnZT&usp=sharing">Address</a>
+          </div>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+    
+  </body>
+  
+  <script src="./jquery-3.5.1.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(window).on("load",function(){
+      $(".loader").fadeOut(4000);
+      $(".intro").fadeOut(2000);
+    });
+      $(window).scroll(function(){
+        if($(this).scrollTop()>30)
+        {
+          $('#scroll').fadeIn();
+        }
+        else
+        {
+          $('#scroll').fadeOut();
+        }
+      });
+      
+      $("#scroll").click(function(){
+        $('html,body').animate({scrollTop:0},800);
+      });
+    });
+  </script>
+</html>

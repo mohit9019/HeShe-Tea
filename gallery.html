@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/gallery.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+    <link rel="stylesheet" href="./css/header.css" type="text/css" media="all" />
+    <link rel="stylesheet" href="./css/footer.css" type="text/css" media="all" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    
+     <div class="loader">
+      <div class="load">
+      </div>
+    </div>
+    <button class="fas fa-chevron-circle-up " id="scroll"></button>
+    
+    <img id="logo" src="./images/logo.png" alt="logo" />
+      <img id="name" src="./images/name1.png" alt="name" />
+      
+    <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i id="bar" class="fas fa-align-justify"></i>
+      </label>
+      <ul>
+        <li><a href="./home.html"><i class="fa fa-home"> Home</i></a></li>
+        <li><a href="./aboutus.html"><i class="fas fa-id-badge"> About</i></a></li>
+        <li><a href="./menu.html"><i class="fas fa-mug-hot"> Menu</i></a></li>
+        <li><a class="active" href="./gallery.html"><i class="fas fa-camera-retro"> Gallery</i></a></li>
+        <li><a href="./contact.html"><i class="fas fa-address-book"> Contact</i></a></li>
+      </ul>
+    </nav><br /><br />
+    
+<!--gallery-->
+    <div class="gallery-section">
+      <div class="inner-width">
+        <h1 class="title">Images</h1>
+        <div class="border"></div>
+        <div class="gallery">
+          
+          <a href="./images/bur1.jpeg" class="image">
+            <img src="./images/bur1.jpeg" alt="">
+          </a>
+          
+          <a href="./images/bur2.jpeg" class="image">
+            <img src="./images/bur2.jpeg" alt="">
+          </a>
+          
+          <a href="./images/sand4.jpeg" class="image">
+            <img src="./images/sand4.jpeg" alt="">
+          </a>
+          
+          <a href="./images/sand3.jpeg" class="image">
+            <img src="./images/sand3.jpeg" alt="">
+          </a>
+
+          <a href="./images/cofe1.jpeg" class="image">
+            <img src="./images/cofe1.jpeg" alt="">
+          </a>
+
+          <a href="./images/cofe2.jpeg" class="image">
+            <img src="./images/cofe2.jpeg" alt="">
+          </a>
+
+          <a href="./images/tea1.jpeg" class="image">
+            <img src="./images/tea1.jpeg" alt="">
+          </a>
+
+          <a href="./images/gb2.jpeg" class="image">
+            <img src="./images/gb2.jpeg" alt="">
+          </a>
+
+          <a href="./images/tea2.jpeg" class="image">
+            <img src="./images/tea2.jpeg" alt="">
+          </a>
+          
+          <a href="./images/tea3.jpeg" class="image">
+            <img src="./images/tea3.jpeg" alt="">
+          </a>
+          
+          <a href="./images/it1.jpeg" class="image">
+            <img src="./images/it1.jpeg" alt="">
+          </a>
+          
+          <a href="./images/cofe6.jpeg" class="image">
+            <img src="./images/cofe6.jpeg" alt="">
+          </a>
+          
+          <a href="./images/cc1.jpeg" class="image">
+            <img src="./images/cc1.jpeg" alt="">
+          </a>
+
+          <a href="./images/sand4.jpeg" class="image">
+            <img src="./images/sand4.jpeg" alt="">
+          </a>
+
+          <a href="./images/bur3.jpeg" class="image">
+            <img src="./images/bur3.jpeg" alt="">
+          </a>
+          
+          <a href="./images/gb1.jpeg" class="image">
+            <img src="./images/gb1.jpeg" alt="">
+          </a>
+          
+          <a href="./images/cofe5.jpeg" class="image">
+            <img src="./images/cofe5.jpeg" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+    
+    <footer class="footer">
+  	 <div class="container">
+  	 	<div class="row">
+  	 		<div class="footer-col">
+  	 			<h4>company</h4>
+          <div class="info">
+            <a href="./aboutus.html">About us</a></li>
+            <a href="./menu.html">Menu</a>
+  	 				<a href="https://www.google.com/maps/d/u/0/edit?mid=1OyM2rs-XVwpPUVFalcClfLfqWsNcvnZT&usp=sharing">Address</a>
+          </div>
+  	 		</div>
+  	 		<div class="footer-col">
+  	 			<h4>follow us</h4>
+  	 			<div class="social-links">
+  	 				<a href="#"><i class="fab fa-facebook-f"></i></a>
+  	 				<a href="#"><i class="fab fa-twitter"></i></a>
+  	 				<a href="#"><i class="fab fa-instagram"></i></a>
+  	 				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+  	 			</div>
+  	 		</div>
+  	 	</div>
+  	 </div>
+  </footer>
+
+  <script>
+  $(document).ready(function(){
+      $(window).on("load",function(){
+      $(".loader").fadeOut(1000);
+    });
+      $(window).scroll(function(){
+        if($(this).scrollTop()>30)
+        {
+          $('#scroll').fadeIn();
+        }
+        else
+        {
+          $('#scroll').fadeOut();
+        }
+      });
+      
+      $("#scroll").click(function(){
+        $('html,body').animate({scrollTop:0},800);
+      });
+    });
+    $(".gallery").magnificPopup({
+      delegate: 'a',
+      type: 'image',
+      gallery:{
+        enabled: true
+      }
+    });
+  </script>
+
+  </body>
+</html>
